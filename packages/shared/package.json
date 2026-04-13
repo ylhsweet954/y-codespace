@@ -1,0 +1,16 @@
+{
+  "name": "@y-codespace/shared",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2"
+  }
+}

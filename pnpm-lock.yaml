@@ -1,0 +1,517 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  apps/web:
+    dependencies:
+      '@y-codespace/shared':
+        specifier: workspace:*
+        version: link:../../packages/shared
+    devDependencies:
+      typescript:
+        specifier: ~6.0.2
+        version: 6.0.2
+      vite:
+        specifier: ^8.0.4
+        version: 8.0.8
+
+  packages/shared:
+    devDependencies:
+      typescript:
+        specifier: ~6.0.2
+        version: 6.0.2
+
+packages:
+
+  '@emnapi/core@1.9.2':
+    resolution: {integrity: sha1-OHAmXs/8c1LQHq1i2Ng9g1ii0DQ=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@emnapi/core/-/core-1.9.2.tgz}
+
+  '@emnapi/runtime@1.9.2':
+    resolution: {integrity: sha1-i0aaPbFggXytsd6QUCEanR6oT6I=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@emnapi/runtime/-/runtime-1.9.2.tgz}
+
+  '@emnapi/wasi-threads@1.2.1':
+    resolution: {integrity: sha1-KP7SGhuhznl8RKBwq8lNQvOuhUg=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@emnapi/wasi-threads/-/wasi-threads-1.2.1.tgz}
+
+  '@napi-rs/wasm-runtime@1.1.3':
+    resolution: {integrity: sha1-HuuGmXcEgTBuX82ERx8g/LYXczY=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@napi-rs/wasm-runtime/-/wasm-runtime-1.1.3.tgz}
+    peerDependencies:
+      '@emnapi/core': ^1.7.1
+      '@emnapi/runtime': ^1.7.1
+
+  '@oxc-project/types@0.124.0':
+    resolution: {integrity: sha1-Hf17P7uY/rwvkbUF9IyUDbc8hwE=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@oxc-project/types/-/types-0.124.0.tgz}
+
+  '@rolldown/binding-android-arm64@1.0.0-rc.15':
+    resolution: {integrity: sha1-yiBXTEaa3nuUH5DJr16D58Z/Brc=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/binding-android-arm64/-/binding-android-arm64-1.0.0-rc.15.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [android]
+
+  '@rolldown/binding-darwin-arm64@1.0.0-rc.15':
+    resolution: {integrity: sha1-zixcf8SVjfyUeD3Amz0J88Lh0HI=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/binding-darwin-arm64/-/binding-darwin-arm64-1.0.0-rc.15.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@rolldown/binding-darwin-x64@1.0.0-rc.15':
+    resolution: {integrity: sha1-JR7N8f23UQMctkhpB8EF2q+dqyE=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/binding-darwin-x64/-/binding-darwin-x64-1.0.0-rc.15.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [darwin]
+
+  '@rolldown/binding-freebsd-x64@1.0.0-rc.15':
+    resolution: {integrity: sha1-28/pX0Cb9nGne9g7/w/ch30hdyg=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/binding-freebsd-x64/-/binding-freebsd-x64-1.0.0-rc.15.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [freebsd]
+
+  '@rolldown/binding-linux-arm-gnueabihf@1.0.0-rc.15':
+    resolution: {integrity: sha1-6gArRURb5vntGIOoNLM1vCzNUQ8=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-1.0.0-rc.15.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm]
+    os: [linux]
+
+  '@rolldown/binding-linux-arm64-gnu@1.0.0-rc.15':
+    resolution: {integrity: sha1-Erlufnghqdws1cZwrVaIKYftXGI=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-1.0.0-rc.15.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@rolldown/binding-linux-arm64-musl@1.0.0-rc.15':
+    resolution: {integrity: sha1-c4sPYvC2W/Z23+SFlQF/GIOFnR8=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/binding-linux-arm64-musl/-/binding-linux-arm64-musl-1.0.0-rc.15.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@rolldown/binding-linux-ppc64-gnu@1.0.0-rc.15':
+    resolution: {integrity: sha1-MIi5+8J4MDOYW1WDFvh/OSgbxTM=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-1.0.0-rc.15.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [ppc64]
+    os: [linux]
+    libc: [glibc]
+
+  '@rolldown/binding-linux-s390x-gnu@1.0.0-rc.15':
+    resolution: {integrity: sha1-rAqm8bcuMVHVbEMUWnHHRc+GKpo=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-1.0.0-rc.15.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [s390x]
+    os: [linux]
+    libc: [glibc]
+
+  '@rolldown/binding-linux-x64-gnu@1.0.0-rc.15':
+    resolution: {integrity: sha1-uM8nqlvm2mQcItrVZl0CQFUdLew=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/binding-linux-x64-gnu/-/binding-linux-x64-gnu-1.0.0-rc.15.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@rolldown/binding-linux-x64-musl@1.0.0-rc.15':
+    resolution: {integrity: sha1-RTH57Kd5Y5NQJmNLqbYcJTU0BTQ=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/binding-linux-x64-musl/-/binding-linux-x64-musl-1.0.0-rc.15.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@rolldown/binding-openharmony-arm64@1.0.0-rc.15':
+    resolution: {integrity: sha1-Zv9pGmX5MlFxvO2Y41O0zEsAlcM=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/binding-openharmony-arm64/-/binding-openharmony-arm64-1.0.0-rc.15.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [openharmony]
+
+  '@rolldown/binding-wasm32-wasi@1.0.0-rc.15':
+    resolution: {integrity: sha1-fbbJCqUQ7vZdfQ8U6Mojd16OXu4=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/binding-wasm32-wasi/-/binding-wasm32-wasi-1.0.0-rc.15.tgz}
+    engines: {node: '>=14.0.0'}
+    cpu: [wasm32]
+
+  '@rolldown/binding-win32-arm64-msvc@1.0.0-rc.15':
+    resolution: {integrity: sha1-gfkJervUSTzBM3Oyb1o9qEYdu0c=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-1.0.0-rc.15.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [win32]
+
+  '@rolldown/binding-win32-x64-msvc@1.0.0-rc.15':
+    resolution: {integrity: sha1-zvEbyJFJ86d3cXJ751SQ+7E64ZM=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/binding-win32-x64-msvc/-/binding-win32-x64-msvc-1.0.0-rc.15.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [win32]
+
+  '@rolldown/pluginutils@1.0.0-rc.15':
+    resolution: {integrity: sha1-5113MVk+GV0jcQ+f9Jv1x0XJZoI=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@rolldown/pluginutils/-/pluginutils-1.0.0-rc.15.tgz}
+
+  '@tybys/wasm-util@0.10.1':
+    resolution: {integrity: sha1-7N3TIFzx4tUnRkn/Du3SmR7X9BQ=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/@tybys/wasm-util/-/wasm-util-0.10.1.tgz}
+
+  detect-libc@2.1.2:
+    resolution: {integrity: sha1-aJxdzcGQDvVYOky59te0c3QgdK0=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/detect-libc/-/detect-libc-2.1.2.tgz}
+    engines: {node: '>=8'}
+
+  fdir@6.5.0:
+    resolution: {integrity: sha1-7Sq5Z6MxreYvGNB32uGSaE1Q01A=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/fdir/-/fdir-6.5.0.tgz}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      picomatch: ^3 || ^4
+    peerDependenciesMeta:
+      picomatch:
+        optional: true
+
+  fsevents@2.3.3:
+    resolution: {integrity: sha1-ysZAd4XQNnWipeGlMFxpezR9kNY=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/fsevents/-/fsevents-2.3.3.tgz}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+
+  lightningcss-android-arm64@1.32.0:
+    resolution: {integrity: sha1-8DOIURbf79nG9UeHUj41FLYeGWg=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/lightningcss-android-arm64/-/lightningcss-android-arm64-1.32.0.tgz}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [android]
+
+  lightningcss-darwin-arm64@1.32.0:
+    resolution: {integrity: sha1-ULcYcbAcgZlYS2SeKSVH+up6+bU=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.32.0.tgz}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [darwin]
+
+  lightningcss-darwin-x64@1.32.0:
+    resolution: {integrity: sha1-NfPpczLRMLnKGB4RtWje1q68bV4=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/lightningcss-darwin-x64/-/lightningcss-darwin-x64-1.32.0.tgz}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [darwin]
+
+  lightningcss-freebsd-x64@1.32.0:
+    resolution: {integrity: sha1-l3enZHK2Ttb/lDQq1kx7r9eUpXU=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/lightningcss-freebsd-x64/-/lightningcss-freebsd-x64-1.32.0.tgz}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [freebsd]
+
+  lightningcss-linux-arm-gnueabihf@1.32.0:
+    resolution: {integrity: sha1-E65lLhq3O5E117faFy9mbEEK1T0=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/lightningcss-linux-arm-gnueabihf/-/lightningcss-linux-arm-gnueabihf-1.32.0.tgz}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm]
+    os: [linux]
+
+  lightningcss-linux-arm64-gnu@1.32.0:
+    resolution: {integrity: sha1-QXhYeVqUWS9oASOhsfnaig4e8zU=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/lightningcss-linux-arm64-gnu/-/lightningcss-linux-arm64-gnu-1.32.0.tgz}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  lightningcss-linux-arm64-musl@1.32.0:
+    resolution: {integrity: sha1-a+NmkugQtxgECAL9gJYjz/5zITM=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/lightningcss-linux-arm64-musl/-/lightningcss-linux-arm64-musl-1.32.0.tgz}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  lightningcss-linux-x64-gnu@1.32.0:
+    resolution: {integrity: sha1-C3gDr06yHP043Tn+Kru1PH3QkfY=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/lightningcss-linux-x64-gnu/-/lightningcss-linux-x64-gnu-1.32.0.tgz}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  lightningcss-linux-x64-musl@1.32.0:
+    resolution: {integrity: sha1-iNyLqGXd3bGsXvBLDxYYBEGMFjs=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/lightningcss-linux-x64-musl/-/lightningcss-linux-x64-musl-1.32.0.tgz}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  lightningcss-win32-arm64-msvc@1.32.0:
+    resolution: {integrity: sha1-TzC6P6XpJfW3n5RejMDRdsOxqzg=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/lightningcss-win32-arm64-msvc/-/lightningcss-win32-arm64-msvc-1.32.0.tgz}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [win32]
+
+  lightningcss-win32-x64-msvc@1.32.0:
+    resolution: {integrity: sha1-FBqlYFZFBkkokCu0rwRfp9n0Igo=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/lightningcss-win32-x64-msvc/-/lightningcss-win32-x64-msvc-1.32.0.tgz}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [win32]
+
+  lightningcss@1.32.0:
+    resolution: {integrity: sha1-uFqulkhtyxv0mnyFcSISc/Tx5Kk=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/lightningcss/-/lightningcss-1.32.0.tgz}
+    engines: {node: '>= 12.0.0'}
+
+  nanoid@3.3.11:
+    resolution: {integrity: sha1-T08RLO++MDIC8hmYOBKJNiZtGFs=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/nanoid/-/nanoid-3.3.11.tgz}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+
+  picocolors@1.1.1:
+    resolution: {integrity: sha1-PTIa8+q5ObCDyPkpodEs2oHCa2s=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/picocolors/-/picocolors-1.1.1.tgz}
+
+  picomatch@4.0.4:
+    resolution: {integrity: sha1-/W9eAKFDCG4HTf/kySS4+yk7BYk=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/picomatch/-/picomatch-4.0.4.tgz}
+    engines: {node: '>=12'}
+
+  postcss@8.5.9:
+    resolution: {integrity: sha1-9u6eC5Tw8ZyX0vFyv71/xx/hzKQ=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/postcss/-/postcss-8.5.9.tgz}
+    engines: {node: ^10 || ^12 || >=14}
+
+  rolldown@1.0.0-rc.15:
+    resolution: {integrity: sha1-6jUmRDstvoNOn49sH95iMuxocXA=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/rolldown/-/rolldown-1.0.0-rc.15.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    hasBin: true
+
+  source-map-js@1.2.1:
+    resolution: {integrity: sha1-HOVlD93YerwJnto33P8CTCZnrkY=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/source-map-js/-/source-map-js-1.2.1.tgz}
+    engines: {node: '>=0.10.0'}
+
+  tinyglobby@0.2.16:
+    resolution: {integrity: sha1-HDt+uVP85Csia8Wh7gZCgoGv89Y=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/tinyglobby/-/tinyglobby-0.2.16.tgz}
+    engines: {node: '>=12.0.0'}
+
+  tslib@2.8.1:
+    resolution: {integrity: sha1-YS7+TtI11Wfoq6Xypfq3AoCt6D8=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/tslib/-/tslib-2.8.1.tgz}
+
+  typescript@6.0.2:
+    resolution: {integrity: sha1-Cxv7FfaMZLlwMvPXirv5i9u6UB8=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/typescript/-/typescript-6.0.2.tgz}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  vite@8.0.8:
+    resolution: {integrity: sha1-Tiapu6d8SyegC2sQEAp9q0jVRqM=, tarball: https://artsz.zte.com.cn:443/artifactory/api/npm/it-npm-virtual/vite/-/vite-8.0.8.tgz}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': ^20.19.0 || >=22.12.0
+      '@vitejs/devtools': ^0.1.0
+      esbuild: ^0.27.0 || ^0.28.0
+      jiti: '>=1.21.0'
+      less: ^4.0.0
+      sass: ^1.70.0
+      sass-embedded: ^1.70.0
+      stylus: '>=0.54.8'
+      sugarss: ^5.0.0
+      terser: ^5.16.0
+      tsx: ^4.8.1
+      yaml: ^2.4.2
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      '@vitejs/devtools':
+        optional: true
+      esbuild:
+        optional: true
+      jiti:
+        optional: true
+      less:
+        optional: true
+      sass:
+        optional: true
+      sass-embedded:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+      tsx:
+        optional: true
+      yaml:
+        optional: true
+
+snapshots:
+
+  '@emnapi/core@1.9.2':
+    dependencies:
+      '@emnapi/wasi-threads': 1.2.1
+      tslib: 2.8.1
+    optional: true
+
+  '@emnapi/runtime@1.9.2':
+    dependencies:
+      tslib: 2.8.1
+    optional: true
+
+  '@emnapi/wasi-threads@1.2.1':
+    dependencies:
+      tslib: 2.8.1
+    optional: true
+
+  '@napi-rs/wasm-runtime@1.1.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)':
+    dependencies:
+      '@emnapi/core': 1.9.2
+      '@emnapi/runtime': 1.9.2
+      '@tybys/wasm-util': 0.10.1
+    optional: true
+
+  '@oxc-project/types@0.124.0': {}
+
+  '@rolldown/binding-android-arm64@1.0.0-rc.15':
+    optional: true
+
+  '@rolldown/binding-darwin-arm64@1.0.0-rc.15':
+    optional: true
+
+  '@rolldown/binding-darwin-x64@1.0.0-rc.15':
+    optional: true
+
+  '@rolldown/binding-freebsd-x64@1.0.0-rc.15':
+    optional: true
+
+  '@rolldown/binding-linux-arm-gnueabihf@1.0.0-rc.15':
+    optional: true
+
+  '@rolldown/binding-linux-arm64-gnu@1.0.0-rc.15':
+    optional: true
+
+  '@rolldown/binding-linux-arm64-musl@1.0.0-rc.15':
+    optional: true
+
+  '@rolldown/binding-linux-ppc64-gnu@1.0.0-rc.15':
+    optional: true
+
+  '@rolldown/binding-linux-s390x-gnu@1.0.0-rc.15':
+    optional: true
+
+  '@rolldown/binding-linux-x64-gnu@1.0.0-rc.15':
+    optional: true
+
+  '@rolldown/binding-linux-x64-musl@1.0.0-rc.15':
+    optional: true
+
+  '@rolldown/binding-openharmony-arm64@1.0.0-rc.15':
+    optional: true
+
+  '@rolldown/binding-wasm32-wasi@1.0.0-rc.15':
+    dependencies:
+      '@emnapi/core': 1.9.2
+      '@emnapi/runtime': 1.9.2
+      '@napi-rs/wasm-runtime': 1.1.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
+    optional: true
+
+  '@rolldown/binding-win32-arm64-msvc@1.0.0-rc.15':
+    optional: true
+
+  '@rolldown/binding-win32-x64-msvc@1.0.0-rc.15':
+    optional: true
+
+  '@rolldown/pluginutils@1.0.0-rc.15': {}
+
+  '@tybys/wasm-util@0.10.1':
+    dependencies:
+      tslib: 2.8.1
+    optional: true
+
+  detect-libc@2.1.2: {}
+
+  fdir@6.5.0(picomatch@4.0.4):
+    optionalDependencies:
+      picomatch: 4.0.4
+
+  fsevents@2.3.3:
+    optional: true
+
+  lightningcss-android-arm64@1.32.0:
+    optional: true
+
+  lightningcss-darwin-arm64@1.32.0:
+    optional: true
+
+  lightningcss-darwin-x64@1.32.0:
+    optional: true
+
+  lightningcss-freebsd-x64@1.32.0:
+    optional: true
+
+  lightningcss-linux-arm-gnueabihf@1.32.0:
+    optional: true
+
+  lightningcss-linux-arm64-gnu@1.32.0:
+    optional: true
+
+  lightningcss-linux-arm64-musl@1.32.0:
+    optional: true
+
+  lightningcss-linux-x64-gnu@1.32.0:
+    optional: true
+
+  lightningcss-linux-x64-musl@1.32.0:
+    optional: true
+
+  lightningcss-win32-arm64-msvc@1.32.0:
+    optional: true
+
+  lightningcss-win32-x64-msvc@1.32.0:
+    optional: true
+
+  lightningcss@1.32.0:
+    dependencies:
+      detect-libc: 2.1.2
+    optionalDependencies:
+      lightningcss-android-arm64: 1.32.0
+      lightningcss-darwin-arm64: 1.32.0
+      lightningcss-darwin-x64: 1.32.0
+      lightningcss-freebsd-x64: 1.32.0
+      lightningcss-linux-arm-gnueabihf: 1.32.0
+      lightningcss-linux-arm64-gnu: 1.32.0
+      lightningcss-linux-arm64-musl: 1.32.0
+      lightningcss-linux-x64-gnu: 1.32.0
+      lightningcss-linux-x64-musl: 1.32.0
+      lightningcss-win32-arm64-msvc: 1.32.0
+      lightningcss-win32-x64-msvc: 1.32.0
+
+  nanoid@3.3.11: {}
+
+  picocolors@1.1.1: {}
+
+  picomatch@4.0.4: {}
+
+  postcss@8.5.9:
+    dependencies:
+      nanoid: 3.3.11
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+
+  rolldown@1.0.0-rc.15:
+    dependencies:
+      '@oxc-project/types': 0.124.0
+      '@rolldown/pluginutils': 1.0.0-rc.15
+    optionalDependencies:
+      '@rolldown/binding-android-arm64': 1.0.0-rc.15
+      '@rolldown/binding-darwin-arm64': 1.0.0-rc.15
+      '@rolldown/binding-darwin-x64': 1.0.0-rc.15
+      '@rolldown/binding-freebsd-x64': 1.0.0-rc.15
+      '@rolldown/binding-linux-arm-gnueabihf': 1.0.0-rc.15
+      '@rolldown/binding-linux-arm64-gnu': 1.0.0-rc.15
+      '@rolldown/binding-linux-arm64-musl': 1.0.0-rc.15
+      '@rolldown/binding-linux-ppc64-gnu': 1.0.0-rc.15
+      '@rolldown/binding-linux-s390x-gnu': 1.0.0-rc.15
+      '@rolldown/binding-linux-x64-gnu': 1.0.0-rc.15
+      '@rolldown/binding-linux-x64-musl': 1.0.0-rc.15
+      '@rolldown/binding-openharmony-arm64': 1.0.0-rc.15
+      '@rolldown/binding-wasm32-wasi': 1.0.0-rc.15
+      '@rolldown/binding-win32-arm64-msvc': 1.0.0-rc.15
+      '@rolldown/binding-win32-x64-msvc': 1.0.0-rc.15
+
+  source-map-js@1.2.1: {}
+
+  tinyglobby@0.2.16:
+    dependencies:
+      fdir: 6.5.0(picomatch@4.0.4)
+      picomatch: 4.0.4
+
+  tslib@2.8.1:
+    optional: true
+
+  typescript@6.0.2: {}
+
+  vite@8.0.8:
+    dependencies:
+      lightningcss: 1.32.0
+      picomatch: 4.0.4
+      postcss: 8.5.9
+      rolldown: 1.0.0-rc.15
+      tinyglobby: 0.2.16
+    optionalDependencies:
+      fsevents: 2.3.3

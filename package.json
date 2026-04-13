@@ -1,0 +1,9 @@
+{
+  "name": "y-codespace",
+  "private": true,
+  "packageManager": "pnpm@10.18.2",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm -r build"
+  }
+}
